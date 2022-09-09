@@ -25,7 +25,7 @@ module.exports = class SendtoWhatsapp extends Plugin {
         executor: (args) => ({
           send: false,
           notused: 'Sending message to Whatsapp',
-          result : 'https://api.callmebot.com/whatsapp.php?phone='+phone+'&text='+nameFixed+' says '+args.join('+')+'&apikey='+api
+          result : 'https://api.callmebot.com/whatsapp.php?phone='+phone+'&text='+nameFixed+'+says+'+args.join('+')+'&apikey='+api
         }),
         
       })
