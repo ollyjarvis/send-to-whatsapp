@@ -1,0 +1,7 @@
+{
+    "name": "Send to Whatsapp",
+    "version": "0.xxx",
+    "description": "Sends messages from SimpleDiscordCrypt to you on Whatsapp",
+    "author": "Jarvis#3218",
+    "license": "MIT"
+  }
