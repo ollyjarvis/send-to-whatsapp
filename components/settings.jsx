@@ -16,7 +16,7 @@ module.exports = class settings extends React.PureComponent {
           required={false}
           note='https://www.callmebot.com/blog/free-api-whatsapp-messages/'
          >
-          APIKey
+          API Key
         </TextInput>
         <TextInput
           onChange={val => this.props.updateSetting('PhoneNumber', val)}
@@ -24,7 +24,15 @@ module.exports = class settings extends React.PureComponent {
           required={false}
           note='Phone number inc country code i.e. "+44 12345 12345"'
          >
-          PhoneNumber
+          Phone Number
+        </TextInput>
+        <TextInput
+          onChange={val => this.props.updateSetting('Name', val)}
+          defaultValue={this.props.getSetting('Name', '')}
+          required={false}
+          note='Name that text message will be sent under'
+         >
+          Name
         </TextInput>
       </div>
     )
